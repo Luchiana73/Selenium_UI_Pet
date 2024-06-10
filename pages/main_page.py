@@ -30,4 +30,4 @@ class MainPage(BasePage):
 
     def go_to_next_page(self):
         WebDriverWait(self.browser, 10).until(
-            EC.visibility_of_element_located(MainPageLocators.ARROW_TO_NEXT_PAGE)).click()
+            EC.element_to_be_clickable(MainPageLocators.ARROW_TO_NEXT_PAGE)).click()

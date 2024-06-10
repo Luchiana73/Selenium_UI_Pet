@@ -15,7 +15,7 @@ class MainPageLocators:
     NO_RECORDS_MESSAGE = (By.CSS_SELECTOR, 'div.p-dataview-emptymessage')
     PET_DETAILS_BUTTON = (By.CSS_SELECTOR, '.p-button.p-component.p-button-raised.p-button-info.p-button-text['
                                            'aria-label="Details"]')
-    ARROW_TO_NEXT_PAGE = (By.XPATH, '//*[@id="app"]/main/div/div[2]/div[3]/button[3]/span')
+    ARROW_TO_NEXT_PAGE = (By.CSS_SELECTOR, 'button.p-paginator-next.p-paginator-element.p-link')
 
 
 class LoginPageLocators:

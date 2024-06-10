@@ -77,6 +77,7 @@ def test_go_to_next_page_arrow(login):
     link = 'http://34.141.58.52:8080/#/'
     page = MainPage(login, link)
     page.open()
+    time.sleep(1)
     page.go_to_next_page()
     time.sleep(1)
 
