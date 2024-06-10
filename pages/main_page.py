@@ -29,4 +29,5 @@ class MainPage(BasePage):
         self.browser.find_element(*MainPageLocators.PET_DETAILS_BUTTON).click()
 
     def go_to_next_page(self):
-        self.browser.find_element(*MainPageLocators.ARROW_TO_NEXT_PAGE).click()
+        WebDriverWait(self.browser, 10).until(
+            EC.visibility_of_element_located(MainPageLocators.ARROW_TO_NEXT_PAGE)).click()
